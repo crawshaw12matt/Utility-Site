@@ -1,0 +1,74 @@
+
+.calculator {
+    /* General Calc Looks */
+    width: 60%;
+    max-width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    background-color: lightslategray;
+    font-size: 2.5rem;
+    /* Flexbox Properites */
+    display: inline-flex;
+    align-content: space-between;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+/* --- Four Blocks within the Calculator --- */
+
+.display {
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    color: black;
+    background-color: ghostwhite;
+    font-size: 5rem;
+    top: 0;
+}
+
+.numbers {
+    height: 40%;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.functions {
+    height: 20%;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.calc-functions {
+    height: 10%;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.equals {
+    background-color: lightskyblue;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+}
+
+/* --- Individual Buttons --- */
+
+.button {
+    height: 40px;
+    width: 60px;
+    margin: 2px;
+    background-color: lightgray;
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
