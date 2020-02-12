@@ -1,0 +1,65 @@
+/* Overall Styles for all html files */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+:root {
+    --primary-color: black;
+    --background-color: #778899;
+    --border-color: #FFA07A;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.blurb {
+    width: 80%;
+    height: auto;
+    margin: 20px 20px;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.nav-buttons {
+    width: 80%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+.card, a {
+    text-decoration: none;
+}

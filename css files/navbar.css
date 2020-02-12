@@ -1,0 +1,119 @@
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 60px;
+    width: 60px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    top: -10px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+    transform: translateX(0%);
+    opacity: 1;
+    transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.75s ease;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: all 0.75s ease;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrap .menu > div {
+    display: flex;
+    flex: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 0.75s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    color: white;
+    list-style: none;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.75s ease;
+}
+
+.meu-wrap .menu > div > div > ul > li > a:hover {
+    opacity: 0.8;
+}

@@ -18,6 +18,7 @@
                 <div>
                     <div>
                         <ul>
+                            <li><a href="layout.html">Home</a></li>
                             <li><a href="calc.html">Calculator</a></li>
                             <li><a href="clock.html">Clock</a></li>
                             <li><a href="weather.html">Weather</a></li>
@@ -30,15 +31,43 @@
 
         <!-- Main Block -->
         <main>
-            <h1>Utilities</h1>
-            <h2>A Web App to use a calculator, a stopwatch/alarm clock, view the local weather, or keep some temporary notes</h2>
+            <div class="blurb">
+                <h1>Utilities</h1>
+            </div>
+            
             <div class="nav-buttons">
-                <ul>
-                    <li><a href="calc.html">A Basic Calculator</a></li>
-                    <li><a href="clock.html">Stopwatch and Alarm Clock</a></li>
-                    <li><a href="weather.html">View the Weather</a></li>
-                    <li><a href="notes.html">Keep Some Notes</a></li>
-                </ul>
+                <div class="card">
+                    <a href="calc.html">
+                        <div class="card-image" id="calc-icon">
+                            <img src="calc-icon-blank.png">
+                        </div>
+                        <div class="description">Calculator</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="clock.html">
+                        <div class="card-image" id="clock-icon">
+                            <img src="clock-blank.png">
+                        </div>
+                        <div class="description">Clock</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="weather.html">
+                        <div class="card-image" id="sun-icon">
+                            <img src="plain-sun.jpg">
+                        </div>
+                        <div class="description">Weather</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="notes.html">
+                        <div class="card-image" id="notepad-icon">
+                            <img src="clipboard-blank.jpg">
+                        </div>
+                        <div class="description">Notes</div>
+                    </a>
+                </div>
             </div>
         </main>
     </body>
